@@ -1,3 +1,3 @@
 # Web Portofolio
-https://quinderbi.github.io/webPortofolio.github.io/
+https://quinderbi.github.io/
 (masih dalam proses/belajar)
