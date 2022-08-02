@@ -1,4 +1,4 @@
 # Web Portofolio
 
--https://quinderbi.me/
+http://quinderbi.me/
 -(masih dalam proses/belajar)
