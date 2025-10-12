@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqeela Fathya Najwa - Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <div class="bg-decoration">
+      <div class="floating-shape shape1"></div>
+      <div class="floating-shape shape2"></div>
+      <div class="floating-shape shape3"></div>
+    </div>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">✨ Keyla</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li class="has-dropdown">
+            <a href="#experience" class="nav-link">Experience</a>
+            <div class="dropdown-content">
+              <a href="#" onclick="goToExperience('professional')"
+                >💼 Professional</a
+              >
+              <a href="#" onclick="goToExperience('organization')"
+                >🤝 Organization</a
+              >
+            </div>
+          </li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="burger-menu" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="toggleMobileMenu()">Home</a>
+      <a href="#about" onclick="toggleMobileMenu()">About Me</a>
+      <a href="#education" onclick="toggleMobileMenu()">Education</a>
+      <a href="#experience" onclick="toggleMobileMenu()">Experience</a>
+      <a href="#publications" onclick="toggleMobileMenu()">Publications</a>
+      <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+      <a href="#certifications" onclick="toggleMobileMenu()">Certifications</a>
+      <a href="#achievements" onclick="toggleMobileMenu()">Achievements</a>
+      <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+      <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+    </div>
+
+    <section id="home">
+      <div class="home-content">
+        <h1>Aqeela Fathya Najwa</h1>
+        <h2>Data Analyst | Data Enthusiast</h2>
+        <p class="tagline">
+          "Where curiosity meets data - building insights, driving change."
+        </p>
+        <p>
+          Hello, I am Keyla! Passionate about transforming data into actionable
+          insights, with a background in data science and experience in business
+          intelligence and project coordination.
+        </p>
+        <div class="cta-buttons">
+          <a href="#contact" class="cta-button">
+            <span>💌</span> Let's Connect
+          </a>
+          <a href="#projects" class="cta-button secondary">
+            <span>📊</span> View Projects
+          </a>
+          <a href="#" class="cta-button download" onclick="downloadCV()">
+            <span>📄</span> Download CV
+          </a>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="profile-circle">👩‍💻</div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">A brief introduction</p>
+
+      <div class="about-box">
+        <p>
+          I'm a fresh graduate from Telkom University with a degree in Data
+          Science, graduating with Cum Laude honors (GPA 3.81/4.00). My journey
+          in data science has been enriched by hands-on experience as a Data
+          Analyst Intern at PT Pelita Air Service and Telkom University, where I
+          transformed raw data into actionable insights through interactive
+          dashboards and comprehensive analytics.
+        </p>
+
+        <p>
+          As a Teaching Assistant for 4 semesters, I've guided over 100+
+          students through complex technical concepts in AI, Operating Systems,
+          and various foundational computing courses. This experience has
+          sharpened my ability to communicate complex ideas clearly and work
+          collaboratively in diverse teams.
+        </p>
+
+        <p>
+          Beyond technical skills, I'm deeply passionate about leveraging data
+          to drive meaningful change. I've published 2 international papers on
+          machine learning applications in healthcare and received the Best
+          Presenter Award at an international conference. I'm actively seeking
+          opportunities in data analytics, business intelligence, and management
+          trainee programs where data plays a strategic role.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-icon">📝</div>
+          <div class="stat-number">2</div>
+          <div class="stat-label">International Publications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">👥</div>
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Students Guided</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-number">4</div>
+          <div class="stat-label">Semesters Teaching</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number">Best</div>
+          <div class="stat-label">Presenter Award</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="reveal">
+      <h2 class="section-title">Education</h2>
+      <p class="section-subtitle">My academic journey</p>
+
+      <div class="education-timeline">
+        <!-- University Education -->
+        <div class="education-item">
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">🎓</div>
+              <div class="education-main">
+                <h3>Bachelor of Data Science (S.Si.D.)</h3>
+                <p class="school">Telkom University</p>
+                <p class="gpa">GPA: 3.81/4.00 – Cum Laude</p>
+                <p class="period">Sept 2021 – Feb 2025</p>
+                <p class="location">Bandung, West Java, Indonesia</p>
+              </div>
+            </div>
+
+            <div class="involvement-section">
+              <h4>🎓 Academic Involvement:</h4>
+              <ul>
+                <li>Teaching Assistant for 6 courses</li>
+                <li>Laboratory Assistant (AI, OS, OOP)</li>
+                <li>Capstone Project Committee</li>
+                <li>Accreditation Representative</li>
+                <li>Paper Revision Committee (2 conferences)</li>
+                <li>Abdimas at SMA Negeri 12 Bandung</li>
+              </ul>
+            </div>
+
+            <div class="achievement-box">
+              <h4>🏆 Academic Achievements:</h4>
+              <ul>
+                <li>
+                  <strong>2 International Publications</strong> (IEEE & JCSE
+                  Scopus)
+                </li>
+                <li><strong>Best Presenter Award</strong> at ICICyTA 2024</li>
+                <li>Completed projects in ML, Data Viz, BI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School Education -->
+        <div class="education-item">
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">🏫</div>
+              <div class="education-main">
+                <h3>SMA Negeri 12 Bandung</h3>
+                <p class="school">High School</p>
+                <p class="period">July 2018 – May 2021</p>
+                <p class="location">Bandung, West Java, Indonesia</p>
+              </div>
+            </div>
+
+            <div class="involvement-section">
+              <h4>🎭 Activities & Involvement:</h4>
+              <ul>
+                <li>Band and Percussion Organization</li>
+                <li>Multiple percussion performances</li>
+                <li>Event organizing & PR committees</li>
+              </ul>
+
+              <h4 style="margin-top: 1rem">📋 Organizational Roles:</h4>
+              <ul>
+                <li>Vice Coordinator PR – KIAS 2020</li>
+                <li>Staff PR – HARPUN 2019</li>
+                <li>Staff Event – Iftar KREMS 2019</li>
+                <li>Coordinator Fundraising – GL 2019</li>
+                <li>Staff PR – GL 2019</li>
+                <li>Staff Publication – KIAS 2019</li>
+              </ul>
+            </div>
+
+            <div class="achievement-highlight">
+              <h4>🏆 Achievement:</h4>
+              <p>🥇 1st Place – Storytelling Competition</p>
+              <p class="award-name">PORAK (Pekan Kreativitas Siswa)</p>
+              <p
+                style="
+                  margin-top: 0.5rem;
+                  color: var(--chocolate);
+                  font-size: 0.95rem;
+                "
+              >
+                Performed "Malin Kundang" story
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">My professional & organizational journey</p>
+
+      <div class="tab-container">
+        <button class="tab-button active" onclick="switchTab('professional')">
+          💼 Professional
+        </button>
+        <button class="tab-button" onclick="switchTab('organization')">
+          🤝 Organization
+        </button>
+      </div>
+
+      <div id="professional" class="tab-content active">
+        <div class="card-grid">
+          <div class="interactive-card" onclick="openModal('exp1')">
+            <div class="card-icon">🔥</div>
+            <h3>Data Analyst Intern</h3>
+            <p class="date">Sept 2025 - Present</p>
+            <p><strong>PT Energi Negeri Meusenia (ENERMA)</strong></p>
+            <p>South Jakarta | Remote</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('exp2')">
+            <div class="card-icon">✈️</div>
+            <h3>Data Analyst Intern</h3>
+            <p class="date">Jul 2024 - Sept 2024</p>
+            <p><strong>PT Pelita Air Service</strong></p>
+            <p>Central Jakarta | Onsite</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('exp3')">
+            <div class="card-icon">💻</div>
+            <h3>Practicum Assistant</h3>
+            <p class="date">Feb 2024 - Jun 2025</p>
+            <p><strong>Informatics Lab - Telkom University</strong></p>
+            <p>3 Courses: AI, OS, OOP</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('exp4')">
+            <div class="card-icon">📚</div>
+            <h3>Data Analyst Intern</h3>
+            <p class="date">Jan 2024 - Feb 2024</p>
+            <p><strong>PT Pelita Air Service (PATC)</strong></p>
+            <p>Central Jakarta | Onsite</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('exp5')">
+            <div class="card-icon">👩‍🏫</div>
+            <h3>Lecturer Assistant</h3>
+            <p class="date">Sept 2023 - Jan 2025</p>
+            <p><strong>Telkom University</strong></p>
+            <p>6 Courses, 4 Semesters</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="organization" class="tab-content">
+        <div class="card-grid">
+          <div class="interactive-card" onclick="openModal('org1')">
+            <div class="card-icon">🎓</div>
+            <h3>ML Path Member</h3>
+            <p><strong>GDSC Telkom University</strong></p>
+            <p class="date">Dec 2023 – Jun 2025</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org2')">
+            <div class="card-icon">📋</div>
+            <h3>Secretary I</h3>
+            <p><strong>PERMIDSI 2024</strong></p>
+            <p class="date">Nov 2023 – Feb 2024</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org3')">
+            <div class="card-icon">🔬</div>
+            <h3>Laboratory Member</h3>
+            <p><strong>Big Data Lab</strong></p>
+            <p class="date">Aug 2023 – Dec 2024</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org4')">
+            <div class="card-icon">🎪</div>
+            <h3>Student Committee</h3>
+            <p><strong>GALAKSI 2023</strong></p>
+            <p class="date">Sep 2023 – Dec 2023</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org5')">
+            <div class="card-icon">🤝</div>
+            <h3>Coordinator</h3>
+            <p><strong>PKKMB DS 2023</strong></p>
+            <p class="date">Aug 2023 – Sep 2023</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org6')">
+            <div class="card-icon">👥</div>
+            <h3>Liaison Officer</h3>
+            <p><strong>PKKMB Telkom</strong></p>
+            <p class="date">May 2023 – Oct 2023</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org7')">
+            <div class="card-icon">🎯</div>
+            <h3>PIC</h3>
+            <p><strong>PERMIDSI 2023</strong></p>
+            <p class="date">Jan 2023 – Mar 2023</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org8')">
+            <div class="card-icon">✏️</div>
+            <h3>Secretary I</h3>
+            <p><strong>Formatur HIMA DS</strong></p>
+            <p class="date">Nov 2022 – Feb 2024</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org9')">
+            <div class="card-icon">📝</div>
+            <h3>General Secretary</h3>
+            <p><strong>FEEDS 2022</strong></p>
+            <p class="date">Nov 2022 – Dec 2022</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org10')">
+            <div class="card-icon">🎭</div>
+            <h3>Event Staff</h3>
+            <p><strong>PERFECT PERMIB</strong></p>
+            <p class="date">Nov 2021 – Jun 2022</p>
+          </div>
+
+          <div class="interactive-card" onclick="openModal('org11')">
+            <div class="card-icon">📋</div>
+            <h3>General Secretary</h3>
+            <p><strong>PKKMB DS 2022</strong></p>
+            <p class="date">Jul 2022 – Sep 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="reveal">
+      <h2 class="section-title">Publications</h2>
+      <p class="section-subtitle">Research contributions to the community</p>
+      <div class="card-grid">
+        <div class="interactive-card" onclick="openModal('pub1')">
+          <div class="card-icon">📝</div>
+          <h3>
+            Enhancing Multiclass Classification of Child Nutritional Status
+          </h3>
+          <p class="date">December 17, 2024 | Added to IEEE: March 11, 2025</p>
+          <span class="pub-badge">IEEE</span>
+          <span class="pub-badge">ICICyTA 2024</span>
+          <span class="pub-badge">🏆 Best Presenter</span>
+          <p style="margin-top: 1rem">
+            <strong>Using KNN and Random Forest with SMOTE</strong>
+          </p>
+          <p style="margin-top: 0.5rem">
+            <strong>First Author & Presenter</strong>
+          </p>
+          <p style="font-size: 0.9rem; color: var(--mauve); margin-top: 0.5rem">
+            <a
+              href="https://ieeexplore.ieee.org/document/10912991"
+              target="_blank"
+              rel="noopener"
+              style="color: var(--mauve); text-decoration: underline"
+              >🔗 IEEE Xplore Link</a
+            >
+          </p>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--chocolate);
+              margin-top: 0.3rem;
+            "
+          >
+            <a
+              href="https://doi.org/10.1109/ICICYTA64807.2024.10912991"
+              target="_blank"
+              rel="noopener"
+              style="color: var(--chocolate); text-decoration: underline"
+              >📄 DOI: 10.1109/ICICYTA64807.2024.10912991</a
+            >
+          </p>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('pub2')">
+          <div class="card-icon">📄</div>
+          <h3>Enhancing Stunting Prediction for Indonesian Children</h3>
+          <p class="date">Published: February 4, 2025</p>
+          <span class="pub-badge">JCSE</span>
+          <span class="pub-badge">Scopus-Indexed</span>
+          <span class="pub-badge">Vol. 18, No. 4</span>
+          <p style="margin-top: 1rem">
+            <strong>Using ML with SMOTE Data Balancing</strong>
+          </p>
+          <p style="margin-top: 0.5rem"><strong>First Author</strong></p>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--chocolate);
+              margin-top: 0.5rem;
+            "
+          >
+            <a
+              href="https://doi.org/10.5626/JCSE.2024.18.4.203"
+              target="_blank"
+              rel="noopener"
+              style="color: var(--chocolate); text-decoration: underline"
+              >📄 DOI: 10.5626/JCSE.2024.18.4.203</a
+            >
+          </p>
+          <p
+            style="font-size: 0.85rem; color: var(--mauve); margin-top: 0.3rem"
+          >
+            pp. 203–213
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Real-world solutions I've built</p>
+      <div class="card-grid">
+        <div class="interactive-card" onclick="openModal('project1')">
+          <div class="card-icon">❤️</div>
+          <h3>Heart Disease Classification</h3>
+          <p>
+            Random Forest with Evolutionary Boosting achieving 86.67% test
+            accuracy
+          </p>
+          <div style="margin-top: 1rem">
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >AutoML</span
+            >
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >Random Forest</span
+            >
+          </div>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('project2')">
+          <div class="card-icon">👶</div>
+          <h3>Child Nutrition Classification</h3>
+          <p>Multiclass model with SMOTE achieving 97.59% accuracy</p>
+          <div style="margin-top: 1rem">
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >KNN</span
+            >
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >SMOTE</span
+            >
+          </div>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('project3')">
+          <div class="card-icon">⛏️</div>
+          <h3>Mining BI Dashboard</h3>
+          <p>Real-time coal production monitoring for PT Kamalindo Sompurna</p>
+          <div style="margin-top: 1rem">
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >Power BI</span
+            >
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >Real-time</span
+            >
+          </div>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('project4')">
+          <div class="card-icon">🛒</div>
+          <h3>Marketplace UI/UX</h3>
+          <p>High-fidelity design for Telkom University students marketplace</p>
+          <div style="margin-top: 1rem">
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >Figma</span
+            >
+            <span
+              style="
+                display: inline-block;
+                background: var(--gold);
+                color: var(--espresso);
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.85rem;
+                margin: 0.3rem 0.3rem 0 0;
+              "
+              >UI/UX</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="project-buttons">
+        <a
+          href="https://github.com/aqeelafn"
+          target="_blank"
+          rel="noopener"
+          class="explore-button"
+        >
+          <span>💻</span> Explore More on GitHub
+        </a>
+        <a
+          href="https://linkedin.com/in/aqeelafn"
+          target="_blank"
+          rel="noopener"
+          class="explore-button"
+        >
+          <span>💼</span> View Projects on LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <section id="certifications" class="reveal">
+      <h2 class="section-title">Certifications & Training</h2>
+      <p class="section-subtitle">Continuous learning journey</p>
+
+      <div style="max-width: 900px; margin: 0 auto">
+        <!-- 2025 Timeline -->
+        <div style="margin-bottom: 4rem">
+          <div class="cert-year-header">
+            <div class="cert-icon">🌟</div>
+            <div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  font-size: 2rem;
+                  margin-bottom: 0.3rem;
+                "
+              >
+                2025
+              </h3>
+              <p style="color: var(--mauve); font-style: italic">
+                Latest Achievements
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-timeline">
+            <!-- Digital Talent Scholarship -->
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <h4 class="cert-title">📚 Digital Talent Scholarship 2025</h4>
+              <p class="cert-provider">
+                Kementerian Komunikasi dan Informatika Republik Indonesia
+              </p>
+
+              <div class="cert-tags">
+                <span class="cert-tag" onclick="openModal('cert1')"
+                  >💼 Fundamental Data Analyst</span
+                >
+                <span class="cert-tag" onclick="openModal('cert2')"
+                  >📊 BI Analyst</span
+                >
+                <span class="cert-tag" onclick="openModal('cert3')"
+                  >🎯 Wawasan Karir</span
+                >
+                <span class="cert-tag" onclick="openModal('cert4')"
+                  >🔬 Pengenalan Data Science</span
+                >
+              </div>
+            </div>
+
+            <!-- DQLab 2025 -->
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <h4 class="cert-title">📖 DQLab Courses 2025</h4>
+              <p class="cert-provider">17 Courses Completed</p>
+              <button onclick="openModal('dqlab2025')" class="cert-button">
+                View All Courses →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2023 Timeline -->
+        <div style="margin-bottom: 4rem">
+          <div class="cert-year-header">
+            <div class="cert-icon">📚</div>
+            <div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  font-size: 2rem;
+                  margin-bottom: 0.3rem;
+                "
+              >
+                2023
+              </h3>
+              <p style="color: var(--mauve); font-style: italic">
+                15+ Certifications
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-timeline">
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <h4 class="cert-title">🎓 Multiple Platforms</h4>
+              <p class="cert-provider">
+                DQLab, Cognitive Class, MySkill, RevoU
+              </p>
+              <button onclick="openModal('cert2023all')" class="cert-button">
+                View All 2023 Certificates →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2022 Timeline -->
+        <div style="margin-bottom: 4rem">
+          <div class="cert-year-header">
+            <div class="cert-icon">💼</div>
+            <div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  font-size: 2rem;
+                  margin-bottom: 0.3rem;
+                "
+              >
+                2022
+              </h3>
+              <p style="color: var(--mauve); font-style: italic">
+                Google Specialization
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-timeline">
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <h4 class="cert-title">🏅 Google Career Certificates</h4>
+              <p class="cert-provider">IT Support Professional Certificate</p>
+              <button onclick="openModal('cert2022all')" class="cert-button">
+                View All 2022 Certificates →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="reveal">
+      <h2 class="section-title">Achievements & Awards</h2>
+      <p class="section-subtitle">Milestones I'm proud of</p>
+
+      <div class="card-grid">
+        <div class="interactive-card" onclick="openModal('achieve1')">
+          <div class="card-icon">🏆</div>
+          <h3>Best Presenter Award</h3>
+          <p class="date">2024</p>
+          <p><strong>The 4th ICICyTA 2024</strong></p>
+          <p>
+            International Conference on Intelligent Cybernetics Technology &
+            Applications
+          </p>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('achieve2')">
+          <div class="card-icon">🥇</div>
+          <h3>1st Place Story Telling Competition</h3>
+          <p class="date">High School</p>
+          <p><strong>PORAK - Pekan Kreativitas Siswa</strong></p>
+          <p>Story: Malin Kundang</p>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('achieve3')">
+          <div class="card-icon">🎓</div>
+          <h3>Accreditation Representative</h3>
+          <p class="date">2024</p>
+          <p><strong>Data Science Program</strong></p>
+          <p>Selected to represent in program accreditation assessment</p>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('achieve4')">
+          <div class="card-icon">💼</div>
+          <h3>Entrepreneurship - Basreng Business</h3>
+          <p class="date">University Period</p>
+          <p><strong>Treasurer - Team of 10</strong></p>
+          <p>Achieved significant revenue & sales targets</p>
+        </div>
+
+        <div class="interactive-card" onclick="openModal('achieve5')">
+          <div class="card-icon">📝</div>
+          <h3>Revision Team Committee</h3>
+          <p class="date">2025 & 2024</p>
+          <p><strong>International Conferences</strong></p>
+          <p>ICoDSA 2025 & ICICyTA 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">
+        Technical and soft skills I bring to the table
+      </p>
+      <div class="skills-container">
+        <!-- Hard Skills -->
+        <div class="skill-card">
+          <h3>💼 Hard Skills</h3>
+          <ul class="skill-list">
+            <li>Data Analytics and Visualization</li>
+            <li>Machine Learning</li>
+            <li>Statistical Analysis</li>
+            <li>Business Intelligence</li>
+            <li>Database Management (MySQL)</li>
+            <li>Programming (Python)</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card">
+          <h3>🛠️ Tools & Platforms</h3>
+          <ul class="skill-list">
+            <li>Tableau</li>
+            <li>Power BI</li>
+            <li>Looker Studio</li>
+            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            <li>Google Workspace (Docs, Sheets, Slides)</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card">
+          <h3>🧠 Soft Skills</h3>
+          <ul class="skill-list">
+            <li>Analytical and Strategic Thinking</li>
+            <li>Work Under Pressure</li>
+            <li>Communication and Collaboration</li>
+            <li>Problem Solving</li>
+            <li>Adaptability</li>
+            <li>Attention to Detail</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+
+        <!-- Language Skills -->
+        <div class="skill-card">
+          <h3>🌐 Language Skills</h3>
+          <div style="margin-top: 1rem">
+            <div class="language-item">
+              <div class="language-name">🇮🇩 Bahasa Indonesia</div>
+              <div class="language-level">Native</div>
+            </div>
+            <div class="language-item">
+              <div class="language-name">🇬🇧 English</div>
+              <div class="language-level">
+                Limited Working Proficiency • TOEFL ITP: 500
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">
+        From code to communication, if it's meaningful, I'm in.
+      </p>
+
+      <div style="max-width: 1000px; margin: 0 auto">
+        <div style="text-align: center; margin-bottom: 3rem">
+          <p
+            style="
+              color: var(--mauve);
+              font-size: 1.2rem;
+              font-style: italic;
+              line-height: 1.8;
+            "
+          >
+            Whether it's dashboards, development programs, or just digital small
+            talk – feel free to say hi! 👋<br />
+            <span style="color: var(--chocolate); font-weight: 600"
+              >I'm always excited to collaborate on meaningful projects and
+              connect with fellow data enthusiasts!</span
+            >
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <!-- Email Card -->
+          <a
+            href="mailto:aqeelafathya@gmail.com"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(244, 228, 215, 0.95)
+                );
+                padding: 2rem;
+                border-radius: 25px;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s ease;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+              "
+              onmouseover="this.style.transform='translateY(-15px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(212, 165, 165, 0.4)'"
+              onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 35px rgba(0, 0, 0, 0.1)'"
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100px;
+                  height: 100px;
+                  background: linear-gradient(135deg, var(--rose), transparent);
+                  border-radius: 0 0 0 100%;
+                  opacity: 0.3;
+                "
+              ></div>
+              <div
+                style="
+                  font-size: 3.5rem;
+                  margin-bottom: 1rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                📧
+              </div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  margin-bottom: 0.5rem;
+                  font-size: 1.5rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                Email
+              </h3>
+              <p
+                style="
+                  color: var(--mauve);
+                  font-size: 0.95rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                aqeelafathya@gmail.com
+              </p>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a
+            href="https://linkedin.com/in/aqeelafn"
+            target="_blank"
+            rel="noopener"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(244, 228, 215, 0.95)
+                );
+                padding: 2rem;
+                border-radius: 25px;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s ease;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+              "
+              onmouseover="this.style.transform='translateY(-15px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(212, 165, 165, 0.4)'"
+              onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 35px rgba(0, 0, 0, 0.1)'"
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100px;
+                  height: 100px;
+                  background: linear-gradient(
+                    135deg,
+                    var(--mauve),
+                    transparent
+                  );
+                  border-radius: 0 0 0 100%;
+                  opacity: 0.3;
+                "
+              ></div>
+              <div
+                style="
+                  font-size: 3.5rem;
+                  margin-bottom: 1rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                💼
+              </div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  margin-bottom: 0.5rem;
+                  font-size: 1.5rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                LinkedIn
+              </h3>
+              <p
+                style="
+                  color: var(--mauve);
+                  font-size: 0.95rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                linkedin.com/in/aqeelafn
+              </p>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a
+            href="https://github.com/aqeelafn"
+            target="_blank"
+            rel="noopener"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(244, 228, 215, 0.95)
+                );
+                padding: 2rem;
+                border-radius: 25px;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s ease;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+              "
+              onmouseover="this.style.transform='translateY(-15px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(212, 165, 165, 0.4)'"
+              onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 35px rgba(0, 0, 0, 0.1)'"
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100px;
+                  height: 100px;
+                  background: linear-gradient(135deg, var(--gold), transparent);
+                  border-radius: 0 0 0 100%;
+                  opacity: 0.3;
+                "
+              ></div>
+              <div
+                style="
+                  font-size: 3.5rem;
+                  margin-bottom: 1rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                💻
+              </div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  margin-bottom: 0.5rem;
+                  font-size: 1.5rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                GitHub
+              </h3>
+              <p
+                style="
+                  color: var(--mauve);
+                  font-size: 0.95rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                github.com/aqeelafn
+              </p>
+            </div>
+          </a>
+
+          <!-- Instagram Card -->
+          <a
+            href="https://instagram.com/keylaqn"
+            target="_blank"
+            rel="noopener"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(244, 228, 215, 0.95)
+                );
+                padding: 2rem;
+                border-radius: 25px;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s ease;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+              "
+              onmouseover="this.style.transform='translateY(-15px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(212, 165, 165, 0.4)'"
+              onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 35px rgba(0, 0, 0, 0.1)'"
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100px;
+                  height: 100px;
+                  background: linear-gradient(
+                    135deg,
+                    var(--peach),
+                    transparent
+                  );
+                  border-radius: 0 0 0 100%;
+                  opacity: 0.3;
+                "
+              ></div>
+              <div
+                style="
+                  font-size: 3.5rem;
+                  margin-bottom: 1rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                📸
+              </div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  margin-bottom: 0.5rem;
+                  font-size: 1.5rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                Instagram
+              </h3>
+              <p
+                style="
+                  color: var(--mauve);
+                  font-size: 0.95rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                @keylaqn
+              </p>
+            </div>
+          </a>
+
+          <!-- Phone Card -->
+          <a
+            href="tel:+6283821666208"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(255, 255, 255, 0.95),
+                  rgba(244, 228, 215, 0.95)
+                );
+                padding: 2rem;
+                border-radius: 25px;
+                box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s ease;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+              "
+              onmouseover="this.style.transform='translateY(-15px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(212, 165, 165, 0.4)'"
+              onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 35px rgba(0, 0, 0, 0.1)'"
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100px;
+                  height: 100px;
+                  background: linear-gradient(135deg, var(--rose), transparent);
+                  border-radius: 0 0 0 100%;
+                  opacity: 0.3;
+                "
+              ></div>
+              <div
+                style="
+                  font-size: 3.5rem;
+                  margin-bottom: 1rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                📱
+              </div>
+              <h3
+                style="
+                  color: var(--chocolate);
+                  margin-bottom: 0.5rem;
+                  font-size: 1.5rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                Phone
+              </h3>
+              <p
+                style="
+                  color: var(--mauve);
+                  font-size: 0.95rem;
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                (+62) 838 2166 6208
+              </p>
+            </div>
+          </a>
+
+          <!-- Location Card -->
+          <div
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.95),
+                rgba(244, 228, 215, 0.95)
+              );
+              padding: 2rem;
+              border-radius: 25px;
+              box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+              transition: all 0.4s ease;
+              text-align: center;
+              position: relative;
+              overflow: hidden;
+              cursor: default;
+            "
+            onmouseover="this.style.transform='translateY(-15px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(212, 165, 165, 0.4)'"
+            onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 35px rgba(0, 0, 0, 0.1)'"
+          >
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(135deg, var(--mauve), transparent);
+                border-radius: 0 0 0 100%;
+                opacity: 0.3;
+              "
+            ></div>
+            <div
+              style="
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+                position: relative;
+                z-index: 1;
+              "
+            >
+              📍
+            </div>
+            <h3
+              style="
+                color: var(--chocolate);
+                margin-bottom: 0.5rem;
+                font-size: 1.5rem;
+                position: relative;
+                z-index: 1;
+              "
+            >
+              Location
+            </h3>
+            <p
+              style="
+                color: var(--mauve);
+                font-size: 0.95rem;
+                position: relative;
+                z-index: 1;
+              "
+            >
+              Bandung, West Java
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div
+          style="
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2.5rem;
+            background: linear-gradient(
+              135deg,
+              rgba(212, 165, 165, 0.2),
+              rgba(154, 123, 140, 0.2)
+            );
+            border-radius: 25px;
+          "
+        >
+          <h3
+            style="
+              color: var(--chocolate);
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+            "
+          >
+            Let's Build Something Amazing Together! ✨
+          </h3>
+          <p
+            style="
+              color: var(--mauve);
+              font-size: 1.1rem;
+              line-height: 1.8;
+              max-width: 700px;
+              margin: 0 auto;
+            "
+          >
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision. Whether you need data
+            insights, analytics solutions, or just want to chat about data
+            science – I'd love to hear from you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
